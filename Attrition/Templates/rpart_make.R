@@ -4,13 +4,13 @@ clear_previous <- TRUE
 ###################################################################
 
 tempate_dummy <- 
-  read.delim("~/tmp/dummies/data/Attrition/Templates/rpart_dummy.R",
+  read.delim("rpart_dummy.R",
              sep = "\n", stringsAsFactors = FALSE, 
              colClasses = "character", quote = "",
              blank.lines.skip = FALSE, header = FALSE)[, 1]
 
 tempate_factor <- 
-  read.delim("~/tmp/dummies/data/Attrition/Templates/rpart_factor.R",
+  read.delim("rpart_factor.R",
              sep = "\n", stringsAsFactors = FALSE, 
              colClasses = "character", quote = "",
              blank.lines.skip = FALSE, header = FALSE)[, 1]

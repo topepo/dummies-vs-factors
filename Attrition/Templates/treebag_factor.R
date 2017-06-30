@@ -35,6 +35,7 @@ testing  <- attrition[-in_train, ]
 mod <- train(x = training[, names(training) != "Attrition"], 
              y = training$Attrition,
              method = "treebag",
+             nbagg = 50,
              trControl = ctrl)
 
 ###################################################################

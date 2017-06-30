@@ -38,7 +38,7 @@ mod <- train(Attrition ~ ., data = training,
              verbose = FALSE, 
              seed = seed + 1,
              num.threads = 1,
-             num.trees = 1500,
+             num.trees = 150, #1500
              importance = "impurity",
              trControl = ctrl)
 
@@ -70,7 +70,7 @@ rs_res$Encoding <- "Dummy Variables"
 
 save(test_res, rs_res,
      file = file.path("..", "Results",
-                      paste0("rf_factor_", seed, ".RData")))
+                      paste0("rf_dummy_", seed, ".RData")))
 
 ###################################################################
 

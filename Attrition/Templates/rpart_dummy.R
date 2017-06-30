@@ -64,7 +64,7 @@ rs_res$Encoding <- "Dummy Variables"
 
 save(test_res, rs_res,
      file = file.path("..", "Results",
-                      paste0("rpart_factor_", seed, ".RData")))
+                      paste0("rpart_dummy_", seed, ".RData")))
 
 ###################################################################
 

@@ -39,7 +39,7 @@ mod <- train(x = training[, names(training) != "Attrition"],
              verbose = FALSE, 
              seed = seed + 1,
              num.threads = 1,
-             num.trees = 1500,
+             num.trees = 150, #1500
              importance = "impurity",
              trControl = ctrl)
 

@@ -36,7 +36,7 @@ testing  <- attrition[-in_train, ]
 mod <- train(x = training[, names(training) != "Attrition"], 
              y = training$Attrition,
              method = "gbm",
-             tuneLength = 50,
+             tuneLength = 5, #50
              verbose = FALSE,
              trControl = ctrl)
 

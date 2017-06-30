@@ -35,7 +35,7 @@ testing  <- attrition[-in_train, ]
 
 mod <- train(Attrition ~ ., data = training, 
              method = "gbm",
-             tuneLength = 50,
+             tuneLength = 5, #50
              verbose = FALSE,
              trControl = ctrl)
 
@@ -67,7 +67,7 @@ rs_res$Encoding <- "Dummy Variables"
 
 save(test_res, rs_res,
      file = file.path("..", "Results",
-                      paste0("gbm_factor_", seed, ".RData")))
+                      paste0("gbm_dummy_", seed, ".RData")))
 
 ###################################################################
 

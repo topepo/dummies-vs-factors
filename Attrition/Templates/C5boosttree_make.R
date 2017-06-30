@@ -4,13 +4,13 @@ clear_previous <- TRUE
 ###################################################################
 
 tempate_dummy <- 
-  read.delim("~/tmp/dummies/data/Attrition/Templates/C5boosttree_dummy.R",
+  read.delim("C5boosttree_dummy.R",
              sep = "\n", stringsAsFactors = FALSE, 
              colClasses = "character", quote = "",
              blank.lines.skip = FALSE, header = FALSE)[, 1]
 
 tempate_factor <- 
-  read.delim("~/tmp/dummies/data/Attrition/Templates/C5boosttree_factor.R",
+  read.delim("C5boosttree_factor.R",
              sep = "\n", stringsAsFactors = FALSE, 
              colClasses = "character", quote = "",
              blank.lines.skip = FALSE, header = FALSE)[, 1]
