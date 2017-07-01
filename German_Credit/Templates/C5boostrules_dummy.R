@@ -1,14 +1,14 @@
 library(caret)
 library(C50)
 library(pROC)
-library(rsample)
+library(evtree)
 
 ###################################################################
 
-seed <- 1034
+seed <- SEED
 
-data("attrition")
-attrition$Over18 <- NULL
+data("GermanCredit")
+
 
 ###################################################################
 
@@ -21,33 +21,33 @@ stats <- function(...) {
 }
 
 ctrl <- trainControl(method = "cv", 
-                     sampling = "down",
                      classProbs = TRUE,
                      summaryFunction = stats)
 
 ###################################################################
 
 set.seed(seed)
-in_train <- createDataPartition(attrition$Attrition, p = 3/4, list = FALSE)
-training <- attrition[ in_train, ]
-testing  <- attrition[-in_train, ]
+in_train <- createDataPartition(GermanCredit$credit_risk, p = 3/4, list = FALSE)
+training <- GermanCredit[ in_train, ]
+testing  <- GermanCredit[-in_train, ]
 
-mod <- train(Attrition ~ ., data = training, 
+mod <- train(credit_risk ~ ., data = training, 
              method = "C5.0",
              tuneGrid = data.frame(trials = c(1:20, 10*(3:10)),
                                    model = "rules",
                                    winnow = FALSE),
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################
 
 test_pred <- predict(mod, testing, type = "prob")
 test_pred$pred <- predict(mod, testing)
-test_pred$obs <- testing$Attrition
+test_pred$obs <- testing$credit_risk
 
 test_res <- stats(test_pred, lev = levels(test_pred$obs))
 test_res <- data.frame(t(test_res))
-test_res$Data <- "Attrition"
+test_res$Data <- "German Credit"
 test_res$Model <- "Boosted C5.0 Rules"
 test_res$Ordered <- "None"
 test_res$Seed <- seed
@@ -57,7 +57,7 @@ test_res$Time <- mod$times$everything[3]
 ###################################################################
 
 rs_res <- mod$resample
-rs_res$Data <- "Attrition"
+rs_res$Data <- "German Credit"
 rs_res$Model <- "Boosted C5.0 Rules"
 rs_res$Ordered <- "None"
 rs_res$Seed <- seed
