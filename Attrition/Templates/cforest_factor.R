@@ -37,6 +37,7 @@ mod <- train(x = training[, names(training) != "Attrition"],
              method = "cforest",
              tuneLength = 10,
              controls = cforest_unbiased(ntree = 100),
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

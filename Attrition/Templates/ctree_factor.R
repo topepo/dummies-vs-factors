@@ -36,6 +36,7 @@ mod <- train(x = training[, names(training) != "Attrition"],
              y = training$Attrition,
              method = "ctree",
              tuneLength = 10,
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

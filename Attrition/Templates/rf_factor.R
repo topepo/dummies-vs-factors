@@ -41,6 +41,7 @@ mod <- train(x = training[, names(training) != "Attrition"],
              num.threads = 1,
              num.trees = 150, #1500
              importance = "impurity",
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

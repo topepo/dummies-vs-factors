@@ -38,6 +38,7 @@ mod <- train(x = training[, names(training) != "Attrition"],
              tuneGrid = data.frame(trials = c(1:20, 10*(3:10)),
                                    model = "rules",
                                    winnow = FALSE),
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

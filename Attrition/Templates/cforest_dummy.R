@@ -36,6 +36,7 @@ mod <- train(Attrition ~ ., data = training,
              method = "cforest",
              tuneLength = 10,
              controls = cforest_unbiased(ntree = 100),
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

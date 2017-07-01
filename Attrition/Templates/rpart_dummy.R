@@ -34,6 +34,7 @@ testing  <- attrition[-in_train, ]
 
 mod <- train(Attrition ~ ., data = training, 
              method = "rpart1SE",
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

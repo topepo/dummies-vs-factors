@@ -40,6 +40,7 @@ mod <- train(Attrition ~ ., data = training,
              num.threads = 1,
              num.trees = 150, #1500
              importance = "impurity",
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

@@ -36,6 +36,7 @@ mod <- train(x = training[, names(training) != "Attrition"],
              y = training$Attrition,
              method = "treebag",
              nbagg = 50,
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

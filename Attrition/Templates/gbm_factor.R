@@ -38,6 +38,7 @@ mod <- train(x = training[, names(training) != "Attrition"],
              method = "gbm",
              tuneLength = 5, #50
              verbose = FALSE,
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

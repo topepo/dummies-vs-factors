@@ -37,6 +37,7 @@ mod <- train(Attrition ~ ., data = training,
              tuneGrid = data.frame(trials = c(1:20, 10*(3:10)),
                                    model = "tree",
                                    winnow = FALSE),
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################
