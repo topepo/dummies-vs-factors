@@ -31,7 +31,7 @@ testing  <- carEvaluation[-in_train, ]
 
 mod <- train(class ~ ., data = training, 
              method = "C5.0Rules",
-             metric = "ROC",
+             metric = "logLoss",
              trControl = ctrl)
 
 ###################################################################

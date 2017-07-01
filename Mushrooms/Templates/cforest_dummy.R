@@ -8,7 +8,8 @@ library(ClusterR)
 seed <- SEED
 
 data("mushroom")
-mushroom$Over18 <- NULL
+mushroom$veil_type <- NULL
+
 
 ###################################################################
 
@@ -35,6 +36,7 @@ mod <- train(class ~ ., data = training,
              method = "cforest",
              tuneLength = 10,
              controls = cforest_unbiased(ntree = 100),
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

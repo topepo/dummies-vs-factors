@@ -32,7 +32,7 @@ testing  <- carEvaluation[-in_train, ]
 mod <- train(x = training[, names(training) != "class"], 
              y = training$class,
              method = "C5.0Tree",
-             metric = "ROC",
+             metric = "logLoss",
              trControl = ctrl)
 
 ###################################################################

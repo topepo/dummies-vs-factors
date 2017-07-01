@@ -8,7 +8,8 @@ library(ClusterR)
 seed <- SEED
 
 data("mushroom")
-mushroom$Over18 <- NULL
+mushroom$veil_type <- NULL
+
 
 ###################################################################
 
@@ -37,6 +38,7 @@ mod <- train(x = training[, names(training) != "class"],
              tuneGrid = data.frame(trials = c(1:20, 10*(3:10)),
                                    model = "rules",
                                    winnow = FALSE),
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

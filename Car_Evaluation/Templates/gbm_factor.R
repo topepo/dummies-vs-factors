@@ -35,7 +35,7 @@ mod <- train(x = training[, names(training) != "class"],
              method = "gbm",
              tuneLength = 5, #50 
              verbose = FALSE,
-             metric = "ROC",
+             metric = "logLoss",
              trControl = ctrl)
 
 ###################################################################

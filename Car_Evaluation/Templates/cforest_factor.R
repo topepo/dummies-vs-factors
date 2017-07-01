@@ -35,7 +35,7 @@ mod <- train(x = training[, names(training) != "class"],
              tuneLength = 10,
              metric = "logLoss",
              controls = cforest_unbiased(ntree = 100),
-             metric = "ROC",
+             metric = "logLoss",
              trControl = ctrl)
 
 ###################################################################

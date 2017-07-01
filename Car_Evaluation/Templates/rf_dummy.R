@@ -37,7 +37,7 @@ mod <- train(class ~ ., data = training,
              num.threads = 1,
              num.trees = 150, #1500
              importance = "impurity",
-             metric = "ROC",
+             metric = "logLoss",
              trControl = ctrl)
 
 ###################################################################

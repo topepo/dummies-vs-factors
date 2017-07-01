@@ -34,7 +34,7 @@ mod <- train(x = training[, names(training) != "class"],
              method = "ctree",
              tuneLength = 10,
              metric = "logLoss",
-             metric = "ROC",
+             metric = "logLoss",
              trControl = ctrl)
 
 ###################################################################

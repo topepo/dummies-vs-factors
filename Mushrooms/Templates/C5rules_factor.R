@@ -8,7 +8,8 @@ library(ClusterR)
 seed <- SEED
 
 data("mushroom")
-mushroom$Over18 <- NULL
+mushroom$veil_type <- NULL
+
 
 ###################################################################
 
@@ -34,6 +35,7 @@ testing  <- mushroom[-in_train, ]
 mod <- train(x = training[, names(training) != "class"], 
              y = training$class,
              method = "C5.0Rules",
+             metric = "ROC",
              trControl = ctrl)
 
 ###################################################################

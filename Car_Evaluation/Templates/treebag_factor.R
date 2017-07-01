@@ -33,7 +33,7 @@ mod <- train(x = training[, names(training) != "class"],
              y = training$class,
              method = "treebag",
              nbagg = 50,
-             metric = "ROC",
+             metric = "logLoss",
              trControl = ctrl)
 
 ###################################################################

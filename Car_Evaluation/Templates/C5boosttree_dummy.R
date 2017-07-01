@@ -35,7 +35,7 @@ mod <- train(class ~ ., data = training,
                                    model = "tree",
                                    winnow = FALSE),
              metric = "logLoss",
-             metric = "ROC",
+             metric = "logLoss",
              trControl = ctrl)
 
 ###################################################################
