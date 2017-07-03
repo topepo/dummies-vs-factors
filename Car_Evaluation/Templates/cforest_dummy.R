@@ -34,7 +34,6 @@ mod <- train(class ~ ., data = training,
              tuneLength = 10,
              metric = "logLoss",
              controls = cforest_unbiased(ntree = 100),
-             metric = "logLoss",
              trControl = ctrl)
 
 ###################################################################
