@@ -35,7 +35,7 @@ testing  <- mushroom[-in_train, ]
 
 mod <- train(class ~ ., data = training, 
              method = "gbm",
-             tuneLength = 5, #50
+             tuneLength = 25,
              verbose = FALSE,
              metric = "ROC",
              trControl = ctrl)
