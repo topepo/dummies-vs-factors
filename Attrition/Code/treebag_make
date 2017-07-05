@@ -1,0 +1,218 @@
+SHELL = /bin/bash
+R    ?= R 
+RCMD =@$(R) CMD
+all: treebag_factor_2395.RData treebag_factor_4421.RData treebag_dummy_1279.RData \
+	 treebag_dummy_9635.RData treebag_dummy_2736.RData treebag_dummy_8348.RData \
+	 treebag_dummy_6610.RData treebag_dummy_1034.RData treebag_factor_8182.RData \
+	 treebag_dummy_467.RData treebag_dummy_1519.RData treebag_dummy_412.RData \
+	 treebag_factor_9635.RData treebag_factor_7461.RData treebag_factor_1279.RData \
+	 treebag_dummy_9729.RData treebag_factor_2736.RData treebag_dummy_4421.RData \
+	 treebag_factor_1034.RData treebag_factor_8348.RData treebag_dummy_2395.RData \
+	 treebag_factor_1619.RData treebag_dummy_7461.RData treebag_dummy_9612.RData \
+	 treebag_factor_467.RData treebag_dummy_8182.RData treebag_factor_9130.RData \
+	 treebag_factor_7350.RData treebag_factor_412.RData treebag_factor_9415.RData \
+	 treebag_factor_9801.RData treebag_dummy_9801.RData treebag_factor_1519.RData \
+	 treebag_factor_9612.RData treebag_dummy_1619.RData treebag_factor_9729.RData \
+	 treebag_dummy_9130.RData treebag_dummy_9415.RData treebag_factor_6610.RData \
+	 treebag_dummy_7350.RData   
+
+treebag_factor_2395.RData: treebag_factor_2395.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_2395.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_2395.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_2395.R'
+
+treebag_factor_4421.RData: treebag_factor_4421.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_4421.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_4421.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_4421.R'
+
+treebag_dummy_1279.RData: treebag_dummy_1279.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_1279.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_1279.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_1279.R'
+
+treebag_dummy_9635.RData: treebag_dummy_9635.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_9635.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_9635.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_9635.R'
+
+treebag_dummy_2736.RData: treebag_dummy_2736.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_2736.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_2736.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_2736.R'
+
+treebag_dummy_8348.RData: treebag_dummy_8348.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_8348.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_8348.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_8348.R'
+
+treebag_dummy_6610.RData: treebag_dummy_6610.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_6610.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_6610.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_6610.R'
+
+treebag_dummy_1034.RData: treebag_dummy_1034.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_1034.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_1034.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_1034.R'
+
+treebag_factor_8182.RData: treebag_factor_8182.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_8182.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_8182.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_8182.R'
+
+treebag_dummy_467.RData: treebag_dummy_467.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_467.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_467.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_467.R'
+
+treebag_dummy_1519.RData: treebag_dummy_1519.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_1519.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_1519.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_1519.R'
+
+treebag_dummy_412.RData: treebag_dummy_412.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_412.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_412.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_412.R'
+
+treebag_factor_9635.RData: treebag_factor_9635.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_9635.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_9635.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_9635.R'
+
+treebag_factor_7461.RData: treebag_factor_7461.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_7461.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_7461.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_7461.R'
+
+treebag_factor_1279.RData: treebag_factor_1279.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_1279.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_1279.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_1279.R'
+
+treebag_dummy_9729.RData: treebag_dummy_9729.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_9729.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_9729.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_9729.R'
+
+treebag_factor_2736.RData: treebag_factor_2736.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_2736.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_2736.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_2736.R'
+
+treebag_dummy_4421.RData: treebag_dummy_4421.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_4421.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_4421.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_4421.R'
+
+treebag_factor_1034.RData: treebag_factor_1034.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_1034.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_1034.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_1034.R'
+
+treebag_factor_8348.RData: treebag_factor_8348.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_8348.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_8348.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_8348.R'
+
+treebag_dummy_2395.RData: treebag_dummy_2395.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_2395.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_2395.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_2395.R'
+
+treebag_factor_1619.RData: treebag_factor_1619.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_1619.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_1619.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_1619.R'
+
+treebag_dummy_7461.RData: treebag_dummy_7461.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_7461.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_7461.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_7461.R'
+
+treebag_dummy_9612.RData: treebag_dummy_9612.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_9612.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_9612.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_9612.R'
+
+treebag_factor_467.RData: treebag_factor_467.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_467.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_467.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_467.R'
+
+treebag_dummy_8182.RData: treebag_dummy_8182.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_8182.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_8182.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_8182.R'
+
+treebag_factor_9130.RData: treebag_factor_9130.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_9130.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_9130.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_9130.R'
+
+treebag_factor_7350.RData: treebag_factor_7350.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_7350.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_7350.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_7350.R'
+
+treebag_factor_412.RData: treebag_factor_412.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_412.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_412.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_412.R'
+
+treebag_factor_9415.RData: treebag_factor_9415.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_9415.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_9415.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_9415.R'
+
+treebag_factor_9801.RData: treebag_factor_9801.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_9801.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_9801.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_9801.R'
+
+treebag_dummy_9801.RData: treebag_dummy_9801.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_9801.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_9801.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_9801.R'
+
+treebag_factor_1519.RData: treebag_factor_1519.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_1519.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_1519.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_1519.R'
+
+treebag_factor_9612.RData: treebag_factor_9612.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_9612.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_9612.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_9612.R'
+
+treebag_dummy_1619.RData: treebag_dummy_1619.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_1619.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_1619.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_1619.R'
+
+treebag_factor_9729.RData: treebag_factor_9729.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_9729.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_9729.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_9729.R'
+
+treebag_dummy_9130.RData: treebag_dummy_9130.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_9130.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_9130.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_9130.R'
+
+treebag_dummy_9415.RData: treebag_dummy_9415.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_9415.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_9415.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_9415.R'
+
+treebag_factor_6610.RData: treebag_factor_6610.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_factor_6610.R'
+	 @$(RCMD) BATCH --vanilla treebag_factor_6610.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_factor_6610.R'
+
+treebag_dummy_7350.RData: treebag_dummy_7350.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  treebag_dummy_7350.R'
+	 @$(RCMD) BATCH --vanilla treebag_dummy_7350.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing treebag_dummy_7350.R'
+

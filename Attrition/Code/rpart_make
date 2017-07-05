@@ -1,0 +1,218 @@
+SHELL = /bin/bash
+R    ?= R 
+RCMD =@$(R) CMD
+all: rpart_factor_2395.RData rpart_factor_4421.RData rpart_dummy_1279.RData \
+	 rpart_dummy_9635.RData rpart_dummy_2736.RData rpart_dummy_8348.RData \
+	 rpart_dummy_6610.RData rpart_dummy_1034.RData rpart_factor_8182.RData \
+	 rpart_dummy_467.RData rpart_dummy_1519.RData rpart_dummy_412.RData \
+	 rpart_factor_9635.RData rpart_factor_7461.RData rpart_factor_1279.RData \
+	 rpart_dummy_9729.RData rpart_factor_2736.RData rpart_dummy_4421.RData \
+	 rpart_factor_1034.RData rpart_factor_8348.RData rpart_dummy_2395.RData \
+	 rpart_factor_1619.RData rpart_dummy_7461.RData rpart_dummy_9612.RData \
+	 rpart_factor_467.RData rpart_dummy_8182.RData rpart_factor_9130.RData \
+	 rpart_factor_7350.RData rpart_factor_412.RData rpart_factor_9415.RData \
+	 rpart_factor_9801.RData rpart_dummy_9801.RData rpart_factor_1519.RData \
+	 rpart_factor_9612.RData rpart_dummy_1619.RData rpart_factor_9729.RData \
+	 rpart_dummy_9130.RData rpart_dummy_9415.RData rpart_factor_6610.RData \
+	 rpart_dummy_7350.RData   
+
+rpart_factor_2395.RData: rpart_factor_2395.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_2395.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_2395.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_2395.R'
+
+rpart_factor_4421.RData: rpart_factor_4421.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_4421.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_4421.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_4421.R'
+
+rpart_dummy_1279.RData: rpart_dummy_1279.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_1279.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_1279.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_1279.R'
+
+rpart_dummy_9635.RData: rpart_dummy_9635.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_9635.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_9635.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_9635.R'
+
+rpart_dummy_2736.RData: rpart_dummy_2736.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_2736.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_2736.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_2736.R'
+
+rpart_dummy_8348.RData: rpart_dummy_8348.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_8348.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_8348.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_8348.R'
+
+rpart_dummy_6610.RData: rpart_dummy_6610.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_6610.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_6610.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_6610.R'
+
+rpart_dummy_1034.RData: rpart_dummy_1034.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_1034.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_1034.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_1034.R'
+
+rpart_factor_8182.RData: rpart_factor_8182.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_8182.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_8182.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_8182.R'
+
+rpart_dummy_467.RData: rpart_dummy_467.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_467.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_467.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_467.R'
+
+rpart_dummy_1519.RData: rpart_dummy_1519.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_1519.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_1519.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_1519.R'
+
+rpart_dummy_412.RData: rpart_dummy_412.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_412.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_412.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_412.R'
+
+rpart_factor_9635.RData: rpart_factor_9635.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_9635.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_9635.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_9635.R'
+
+rpart_factor_7461.RData: rpart_factor_7461.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_7461.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_7461.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_7461.R'
+
+rpart_factor_1279.RData: rpart_factor_1279.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_1279.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_1279.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_1279.R'
+
+rpart_dummy_9729.RData: rpart_dummy_9729.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_9729.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_9729.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_9729.R'
+
+rpart_factor_2736.RData: rpart_factor_2736.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_2736.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_2736.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_2736.R'
+
+rpart_dummy_4421.RData: rpart_dummy_4421.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_4421.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_4421.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_4421.R'
+
+rpart_factor_1034.RData: rpart_factor_1034.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_1034.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_1034.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_1034.R'
+
+rpart_factor_8348.RData: rpart_factor_8348.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_8348.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_8348.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_8348.R'
+
+rpart_dummy_2395.RData: rpart_dummy_2395.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_2395.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_2395.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_2395.R'
+
+rpart_factor_1619.RData: rpart_factor_1619.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_1619.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_1619.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_1619.R'
+
+rpart_dummy_7461.RData: rpart_dummy_7461.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_7461.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_7461.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_7461.R'
+
+rpart_dummy_9612.RData: rpart_dummy_9612.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_9612.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_9612.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_9612.R'
+
+rpart_factor_467.RData: rpart_factor_467.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_467.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_467.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_467.R'
+
+rpart_dummy_8182.RData: rpart_dummy_8182.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_8182.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_8182.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_8182.R'
+
+rpart_factor_9130.RData: rpart_factor_9130.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_9130.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_9130.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_9130.R'
+
+rpart_factor_7350.RData: rpart_factor_7350.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_7350.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_7350.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_7350.R'
+
+rpart_factor_412.RData: rpart_factor_412.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_412.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_412.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_412.R'
+
+rpart_factor_9415.RData: rpart_factor_9415.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_9415.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_9415.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_9415.R'
+
+rpart_factor_9801.RData: rpart_factor_9801.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_9801.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_9801.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_9801.R'
+
+rpart_dummy_9801.RData: rpart_dummy_9801.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_9801.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_9801.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_9801.R'
+
+rpart_factor_1519.RData: rpart_factor_1519.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_1519.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_1519.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_1519.R'
+
+rpart_factor_9612.RData: rpart_factor_9612.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_9612.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_9612.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_9612.R'
+
+rpart_dummy_1619.RData: rpart_dummy_1619.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_1619.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_1619.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_1619.R'
+
+rpart_factor_9729.RData: rpart_factor_9729.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_9729.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_9729.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_9729.R'
+
+rpart_dummy_9130.RData: rpart_dummy_9130.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_9130.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_9130.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_9130.R'
+
+rpart_dummy_9415.RData: rpart_dummy_9415.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_9415.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_9415.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_9415.R'
+
+rpart_factor_6610.RData: rpart_factor_6610.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_factor_6610.R'
+	 @$(RCMD) BATCH --vanilla rpart_factor_6610.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_factor_6610.R'
+
+rpart_dummy_7350.RData: rpart_dummy_7350.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  rpart_dummy_7350.R'
+	 @$(RCMD) BATCH --vanilla rpart_dummy_7350.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing rpart_dummy_7350.R'
+

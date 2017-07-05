@@ -1,0 +1,218 @@
+SHELL = /bin/bash
+R    ?= R 
+RCMD =@$(R) CMD
+all: gbm_factor_2395.RData gbm_factor_4421.RData gbm_dummy_1279.RData \
+	 gbm_dummy_9635.RData gbm_dummy_2736.RData gbm_dummy_8348.RData \
+	 gbm_dummy_6610.RData gbm_dummy_1034.RData gbm_factor_8182.RData \
+	 gbm_dummy_467.RData gbm_dummy_1519.RData gbm_dummy_412.RData \
+	 gbm_factor_9635.RData gbm_factor_7461.RData gbm_factor_1279.RData \
+	 gbm_dummy_9729.RData gbm_factor_2736.RData gbm_dummy_4421.RData \
+	 gbm_factor_1034.RData gbm_factor_8348.RData gbm_dummy_2395.RData \
+	 gbm_factor_1619.RData gbm_dummy_7461.RData gbm_dummy_9612.RData \
+	 gbm_factor_467.RData gbm_dummy_8182.RData gbm_factor_9130.RData \
+	 gbm_factor_7350.RData gbm_factor_412.RData gbm_factor_9415.RData \
+	 gbm_factor_9801.RData gbm_dummy_9801.RData gbm_factor_1519.RData \
+	 gbm_factor_9612.RData gbm_dummy_1619.RData gbm_factor_9729.RData \
+	 gbm_dummy_9130.RData gbm_dummy_9415.RData gbm_factor_6610.RData \
+	 gbm_dummy_7350.RData   
+
+gbm_factor_2395.RData: gbm_factor_2395.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_2395.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_2395.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_2395.R'
+
+gbm_factor_4421.RData: gbm_factor_4421.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_4421.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_4421.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_4421.R'
+
+gbm_dummy_1279.RData: gbm_dummy_1279.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_1279.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_1279.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_1279.R'
+
+gbm_dummy_9635.RData: gbm_dummy_9635.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_9635.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_9635.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_9635.R'
+
+gbm_dummy_2736.RData: gbm_dummy_2736.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_2736.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_2736.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_2736.R'
+
+gbm_dummy_8348.RData: gbm_dummy_8348.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_8348.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_8348.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_8348.R'
+
+gbm_dummy_6610.RData: gbm_dummy_6610.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_6610.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_6610.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_6610.R'
+
+gbm_dummy_1034.RData: gbm_dummy_1034.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_1034.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_1034.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_1034.R'
+
+gbm_factor_8182.RData: gbm_factor_8182.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_8182.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_8182.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_8182.R'
+
+gbm_dummy_467.RData: gbm_dummy_467.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_467.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_467.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_467.R'
+
+gbm_dummy_1519.RData: gbm_dummy_1519.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_1519.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_1519.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_1519.R'
+
+gbm_dummy_412.RData: gbm_dummy_412.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_412.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_412.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_412.R'
+
+gbm_factor_9635.RData: gbm_factor_9635.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_9635.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_9635.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_9635.R'
+
+gbm_factor_7461.RData: gbm_factor_7461.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_7461.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_7461.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_7461.R'
+
+gbm_factor_1279.RData: gbm_factor_1279.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_1279.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_1279.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_1279.R'
+
+gbm_dummy_9729.RData: gbm_dummy_9729.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_9729.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_9729.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_9729.R'
+
+gbm_factor_2736.RData: gbm_factor_2736.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_2736.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_2736.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_2736.R'
+
+gbm_dummy_4421.RData: gbm_dummy_4421.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_4421.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_4421.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_4421.R'
+
+gbm_factor_1034.RData: gbm_factor_1034.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_1034.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_1034.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_1034.R'
+
+gbm_factor_8348.RData: gbm_factor_8348.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_8348.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_8348.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_8348.R'
+
+gbm_dummy_2395.RData: gbm_dummy_2395.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_2395.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_2395.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_2395.R'
+
+gbm_factor_1619.RData: gbm_factor_1619.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_1619.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_1619.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_1619.R'
+
+gbm_dummy_7461.RData: gbm_dummy_7461.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_7461.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_7461.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_7461.R'
+
+gbm_dummy_9612.RData: gbm_dummy_9612.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_9612.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_9612.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_9612.R'
+
+gbm_factor_467.RData: gbm_factor_467.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_467.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_467.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_467.R'
+
+gbm_dummy_8182.RData: gbm_dummy_8182.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_8182.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_8182.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_8182.R'
+
+gbm_factor_9130.RData: gbm_factor_9130.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_9130.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_9130.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_9130.R'
+
+gbm_factor_7350.RData: gbm_factor_7350.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_7350.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_7350.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_7350.R'
+
+gbm_factor_412.RData: gbm_factor_412.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_412.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_412.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_412.R'
+
+gbm_factor_9415.RData: gbm_factor_9415.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_9415.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_9415.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_9415.R'
+
+gbm_factor_9801.RData: gbm_factor_9801.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_9801.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_9801.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_9801.R'
+
+gbm_dummy_9801.RData: gbm_dummy_9801.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_9801.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_9801.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_9801.R'
+
+gbm_factor_1519.RData: gbm_factor_1519.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_1519.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_1519.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_1519.R'
+
+gbm_factor_9612.RData: gbm_factor_9612.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_9612.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_9612.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_9612.R'
+
+gbm_dummy_1619.RData: gbm_dummy_1619.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_1619.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_1619.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_1619.R'
+
+gbm_factor_9729.RData: gbm_factor_9729.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_9729.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_9729.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_9729.R'
+
+gbm_dummy_9130.RData: gbm_dummy_9130.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_9130.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_9130.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_9130.R'
+
+gbm_dummy_9415.RData: gbm_dummy_9415.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_9415.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_9415.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_9415.R'
+
+gbm_factor_6610.RData: gbm_factor_6610.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_factor_6610.R'
+	 @$(RCMD) BATCH --vanilla gbm_factor_6610.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_factor_6610.R'
+
+gbm_dummy_7350.RData: gbm_dummy_7350.R 
+	 @date '+ %Y-%m-%d %H:%M:%S: starting  gbm_dummy_7350.R'
+	 @$(RCMD) BATCH --vanilla gbm_dummy_7350.R
+	 @date '+ %Y-%m-%d %H:%M:%S: finishing gbm_dummy_7350.R'
+
