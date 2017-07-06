@@ -20,7 +20,7 @@ stats <- function(...) {
     mnLogLoss(...))
 }
 
-ctrl <- trainControl(method = "cv", 
+ctrl <- trainControl(method = "repeatedcv", repeats = 5,
                      classProbs = TRUE,
                      search = "random",                    
                      summaryFunction = stats)
