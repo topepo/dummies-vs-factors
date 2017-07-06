@@ -8,7 +8,8 @@ library(evtree)
 seed <- SEED
 
 data("GermanCredit")
-
+GermanCredit$employment_duration <-
+   factor(as.character(GermanCredit$employment_duration))
 
 ###################################################################
 
