@@ -34,6 +34,8 @@ mod <- train(class ~ ., data = training,
              metric = "logLoss",
              trControl = ctrl)
 
+print(mod)
+
 ###################################################################
 
 test_pred <- predict(mod, testing, type = "prob")
