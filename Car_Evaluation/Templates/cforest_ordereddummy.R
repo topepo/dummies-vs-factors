@@ -25,14 +25,9 @@ carEvaluation$luggageBoot <- ordered(as.character(carEvaluation$luggageBoot),
 ###################################################################
 
 
-stats <- function(...) {
-  c(multiClassSummary(...),
-    mnLogLoss(...))
-}
-
 ctrl <- trainControl(method = "cv", 
                      classProbs = TRUE,
-                     summaryFunction = stats)
+                     summaryFunction = multiClassSummary)
 
 ###################################################################
 

@@ -31,14 +31,9 @@ carEvaluation$luggageBoot <- as.numeric(carEvaluation$luggageBoot)
 ###################################################################
 
 
-stats <- function(...) {
-  c(multiClassSummary(...),
-    mnLogLoss(...))
-}
-
 ctrl <- trainControl(method = "cv", 
                      classProbs = TRUE,
-                     summaryFunction = stats)
+                     summaryFunction = multiClassSummary)
 
 ###################################################################
 
