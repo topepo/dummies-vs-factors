@@ -15,6 +15,18 @@ tempate_factor <-
              colClasses = "character", quote = "",
              blank.lines.skip = FALSE, header = FALSE)[, 1]
 
+tempate_ordered <- 
+  read.delim("rpart_ordered.R",
+             sep = "\n", stringsAsFactors = FALSE, 
+             colClasses = "character", quote = "",
+             blank.lines.skip = FALSE, header = FALSE)[, 1]
+
+tempate_ordereddummy <- 
+  read.delim("rpart_ordereddummy.R",
+             sep = "\n", stringsAsFactors = FALSE, 
+             colClasses = "character", quote = "",
+             blank.lines.skip = FALSE, header = FALSE)[, 1]
+
 ###################################################################
 
 if(clear_previous) {
@@ -29,10 +41,9 @@ if(clear_previous) {
 }
 
 ###################################################################
+num_sim <- 2
 
-num_sim <- 20
-
-set.seed(541)
+set.seed(747)
 seeds <- sample.int(10000, num_sim)
 
 for(i in seeds) {
@@ -46,13 +57,27 @@ for(i in seeds) {
   tmp_factor <- gsub("SEED", i, tmp_factor)
   cat(tmp_factor, sep = "\n", 
       file =  file.path("..", "Code", 
-                        paste0("rpart_factor_", i, ".R")))
+                        paste0("rpart_factor_", i, ".R")))  
+  
+  tmp_ordered <- tempate_ordered
+  tmp_ordered <- gsub("SEED", i, tmp_ordered)
+  cat(tmp_ordered, sep = "\n", 
+      file =  file.path("..", "Code", 
+                        paste0("rpart_ordered_", i, ".R")))
+  
+  tmp_ordereddummy <- tempate_ordereddummy
+  tmp_ordereddummy <- gsub("SEED", i, tmp_ordereddummy)
+  cat(tmp_ordereddummy, sep = "\n", 
+      file =  file.path("..", "Code", 
+                        paste0("rpart_ordereddummy_", i, ".R")))  
 }
 
 ###################################################################
 
 r_names <-  c(paste0("rpart_dummy_", seeds, ".R"),
-              paste0("rpart_factor_", seeds, ".R"))
+              paste0("rpart_factor_", seeds, ".R"),
+              paste0("rpart_ordered_", seeds, ".R"),
+              paste0("rpart_ordereddummy_", seeds, ".R"))
 r_names <- sample(r_names)
 
 rdata_names <- paste0(r_names, "Data")
@@ -60,7 +85,7 @@ rdata_names <- paste0(r_names, "Data")
 ###################################################################
 
 over <- length(rdata_names) %% 3
-if(over > 0) out_names <- c(rdata_names, rep("", 3 - over))
+out_names <- if(over > 0) c(rdata_names, rep("", 3 - over)) else rdata_names
 deps <- matrix(out_names, nrow = 3)
 deps <- apply(deps, 2, function(x) paste("\t", paste(x, collapse = " "), "\\\n"))
 

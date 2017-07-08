@@ -8,7 +8,20 @@ library(rsample)
 seed <- SEED
 
 data("attrition")
-attrition$Over18 <- NULL
+attrition$Education <- 
+  factor(as.character(attrition$Education))
+attrition$EnvironmentSatisfaction <- 
+  factor(as.character(attrition$EnvironmentSatisfaction))
+attrition$JobInvolvement <- 
+  factor(as.character(attrition$JobInvolvement))
+attrition$JobSatisfaction <- 
+  factor(as.character(attrition$JobSatisfaction))
+attrition$PerformanceRating <- 
+  factor(as.character(attrition$PerformanceRating))
+attrition$RelationshipSatisfaction <- 
+  factor(as.character(attrition$RelationshipSatisfaction))
+attrition$WorkLifeBalance <- 
+  factor(as.character(attrition$WorkLifeBalance))
 
 ###################################################################
 
