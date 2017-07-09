@@ -21,31 +21,32 @@ for (i in seq_along(rdata_files)) {
 }
 
 test_results <- bind_rows(test_results) %>%
-  select(-logLoss.1) %>%
   arrange(Model, Seed, Encoding)
 rs_results <-  bind_rows(rs_results)
+
+table(test_results$Model, test_results$Encoding)
 
 ###################################################################
 
 factor_results <- test_results %>%
   filter(Encoding == "Factor Variables") %>%
   select(-Encoding, -Ordered) %>%
-  gather(Metric, Factors, logLoss:Mean_Balanced_Accuracy, Time)
+  gather(Metric, Factors, Accuracy:logLoss, Time)
 
 dummy_results <- test_results %>%
   filter(Encoding == "Dummy Variables") %>%
   select(-Encoding, -Ordered) %>%
-  gather(Metric, Dummies, logLoss:Mean_Balanced_Accuracy, Time)
+  gather(Metric, Dummies, Accuracy:logLoss, Time)
 
 ordered_results <- test_results %>%
   filter(Encoding == "Ordered Factors") %>%
   select(-Encoding, -Ordered) %>%
-  gather(Metric, Ordered, logLoss:Mean_Balanced_Accuracy, Time)
+  gather(Metric, Ordered, Accuracy:logLoss, Time)
 
 ordereddummy_results <- test_results %>%
   filter(Encoding == "Ordered Dummy Variables") %>%
   select(-Encoding, -Ordered) %>%
-  gather(Metric, Ordered_Dummy, logLoss:Mean_Balanced_Accuracy, Time)
+  gather(Metric, Ordered_Dummy, Accuracy:logLoss, Time)
 
 merged_results <- full_join(factor_results, dummy_results) %>%
   full_join(ordered_results) %>%
@@ -60,9 +61,9 @@ if(interactive()) {
     mutate(Model = gsub(" ", "\n", as.character(Model))) %>%
     mutate(Model = reorder(Model, Difference, median, na.rm = TRUE)) %>%
     ggplot(aes(x = Model, y = Difference)) + 
-    geom_boxplot()
+    geom_point()
 }
 
 ###################################################################
 
-save(merged_results, file = "Car_Evaluation.RData")
+save(merged_results, file = "Attrition.RData")
