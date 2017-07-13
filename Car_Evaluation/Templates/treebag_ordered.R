@@ -49,7 +49,7 @@ test_pred <- predict(mod, testing, type = "prob")
 test_pred$pred <- predict(mod, testing)
 test_pred$obs <- testing$class
 
-test_res <- stats(test_pred, lev = levels(test_pred$obs))
+test_res <- multiClassSummary(test_pred, lev = levels(test_pred$obs))
 test_res <- data.frame(t(test_res))
 test_res$Data <- "Car Evaluation"
 test_res$Model <- "Bagged CART"
