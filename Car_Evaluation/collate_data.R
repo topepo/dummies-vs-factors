@@ -21,9 +21,10 @@ for (i in seq_along(rdata_files)) {
 }
 
 test_results <- bind_rows(test_results) %>%
-  select(-logLoss.1) %>%
   arrange(Model, Seed, Encoding)
 rs_results <-  bind_rows(rs_results)
+
+table(test_results$Model, test_results$Encoding)
 
 ###################################################################
 
