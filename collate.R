@@ -4,20 +4,30 @@ load("Mushrooms/Mushrooms.RData")
 mushrooms <- merged_results
 load("HPC/HPC.RData")
 hpc <- merged_results
+load("Car_Evaluation/Car_Evaluation.RData")
+cars <- merged_results
 
 library(tidyverse)
 library(ggplot2)
+theme_set(theme_bw())
 
 sim_res <- bind_rows(churn, mushrooms, hpc)
+sim_res$Ordered <- NA
+sim_res$Ordered_Dummy <- NA
+
+sim_res <- bind_rows(sim_res, cars)
 
 sim_res %>%
   filter(Metric == "Time") %>%
   mutate(Difference = Dummies/Factors) %>%
   mutate(Model = gsub(" ", "\n", as.character(Model))) %>%
   mutate(Model = reorder(Model, Difference, median, na.rm = TRUE)) %>%
-  ggplot(aes(x = Model, y = Difference)) + 
-  geom_boxplot() + 
-  facet_wrap(~Data, nrow = 1)
+  group_by(Model, Data) %>%
+  summarize(Speedup = median(Difference)) %>%
+  ggplot(aes(x = Model, y = Speedup, group = Data, col = Data, shape = Data)) + 
+  geom_point() + 
+  theme(legend.position = "top")
+
 
 sim_res %>%
   filter(Metric %in% c("ROC", "Accuracy") & Data == "Churn") %>%
