@@ -30,7 +30,7 @@ if(clear_previous) {
 
 ###################################################################
 
-num_sim <- 20
+num_sim <- 500
 
 set.seed(747)
 seeds <- sample.int(10000, num_sim)
